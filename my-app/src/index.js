@@ -1,10 +1,18 @@
 
-import React from "react";
-import { render } from "react-dom";
-import App from "./components/App";
-import "./style/index.css";
+import React from 'react';
+import { render } from 'react-dom';
 
-render(<App />, document.getElementById("root"));
+import Shopping from './components/Shopping';
+
+export default function App() {
+  return (
+    <>
+      <Shopping />
+    </>
+  );
+}
+
+render(<App />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
